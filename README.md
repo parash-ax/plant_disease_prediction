@@ -1,6 +1,6 @@
 # 🌱 Plant Disease Prediction
 
-![Plant Disease Detection](https://www.letsnurture.com/wp-content/uploads/2021/02/Plant-disease-classifier-with-ai-blog-banner.jpg.com)
+![Plant Disease Detection](https://www.letsnurture.com/wp-content/uploads/2021/02/Plant-disease-classifier-with-ai-blog-banner.jpg)
 
 ## 📌 About the Project
 This project is a **Deep Learning-based Plant Disease Prediction System** that classifies plant leaf images into different disease categories. The model uses **Convolutional Neural Networks (CNNs)** trained on a dataset of plant leaf images to identify various diseases and provide possible remedies.
