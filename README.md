@@ -100,7 +100,7 @@ The web app will run at **http://127.0.0.1:8000/** (Django) or **http://127.0.0.
 ---
 
 ## 👨‍💻 Author
-🔹 **Your Name**  
+🔹 **PARASHRAM A**  
 🔹 [GitHub](https://github.com/parash-ax)  
 🔹 [LinkedIn](https://linkedin.com/in/parash1310-a-)
 
