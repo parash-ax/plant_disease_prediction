@@ -1,88 +1,116 @@
-🌿 Plant Disease Prediction 🔍
-🚀 AI-powered web app to detect plant diseases from leaf images using Deep Learning (CNN) & Django
- --img
+# 🌱 Plant Disease Prediction
 
-🏆 About the Project
-Plant Disease Prediction is a deep learning-based web application designed to detect plant diseases from images of leaves. This tool helps farmers, researchers, and agriculturists by providing an AI-driven solution for identifying plant diseases early and taking preventive actions.
+![Plant Disease Detection](www.letsnurture.com/wp-content/uploads/2021/02/Plant-disease-classifier-with-ai-blog-banner.jpg)
 
-📸 Upload an image of a plant leaf
-🔍 AI analyzes the image using a trained CNN model
-📊 Instant results: Healthy or Diseased (with disease name)
-🌍 Web-based solution powered by Django
-🚀 Tech Stack
-Component	Technology Used
-Frontend	HTML, CSS, JavaScript
-Backend	Django, Python
-Deep Learning	PyTorch, CNN
-Deployment	Django Web Framework
-📂 Project Structure
-php
-Copy
-Edit
+## 📌 About the Project
+This project is a **Deep Learning-based Plant Disease Prediction System** that classifies plant leaf images into different disease categories. The model uses **Convolutional Neural Networks (CNNs)** trained on a dataset of plant leaf images to identify various diseases and provide possible remedies.
+
+---
+
+## 🚀 Features
+✅ Upload an image of a plant leaf
+✅ Get instant disease classification results
+✅ Provides potential remedies for identified diseases
+✅ Simple and user-friendly web interface using **Django**
+✅ Uses **PyTorch (.pth model)** for inference
+
+---
+
+## 📂 Folder Structure
+```bash
 📦 plant_disease_prediction
-│── 📂 prediction            # Model and prediction logic
-│   ├── model.py            # CNN model structure
-│   ├── predict.py          # Image classification logic
-│   ├── plant_disease_model.pt  # Pre-trained model file
-│── 📂 static                # CSS, JS, and images
-│── 📂 templates             # HTML templates
-│── 📂 app                   # Django application
-│   ├── views.py            # Handles requests and responses
-│   ├── urls.py             # URL routing
-│── manage.py                # Django entry point
-│── requirements.txt         # Required dependencies
-│── README.md                # Documentation
-🌱 How It Works?
-Upload an Image 📸
-Select a plant leaf image from your device
-AI Model Analyzes 🧠
-The deep learning model (CNN) processes the image
-Instant Results ⚡
-Get a prediction: "Healthy" ✅ or "Diseased" ❌ with disease name
-⚙️ Installation & Setup
-1️⃣ Clone the Repository
-bash
-Copy
-Edit
+ ┣ 📂 static
+ ┃ ┗ 📂 images  # Contains UI assets
+ ┣ 📂 templates  # HTML Files for UI
+ ┣ 📂 prediction  # Model and inference code
+ ┣ ┣ 📜 model.py  # CNN model structure
+ ┣ ┣ 📜 predict.py  # Prediction logic
+ ┣ ┣ 📜 plant_disease_model_1_latest.pth  # Trained model file
+ ┣ 📜 app.py  # Flask/Django Backend
+ ┣ 📜 requirements.txt  # Dependencies
+ ┣ 📜 README.md  # This file
+```
+
+---
+
+## ⚙️ Installation & Setup
+### 1️⃣ Clone the Repository
+```bash
 git clone https://github.com/parash-ax/plant-disease-prediction.git
 cd plant-disease-prediction
-2️⃣ Install Dependencies
-bash
-Copy
-Edit
+```
+
+### 2️⃣ Install Dependencies
+```bash
 pip install -r requirements.txt
-3️⃣ Run Django Server
-bash
-Copy
-Edit
+```
+
+### 3️⃣ Run the Web App
+For **Django Users**:
+```bash
 python manage.py runserver
-4️⃣ Open the Web App
-Open http://127.0.0.1:8000/ in your browser
-🎯 Model Details
-Convolutional Neural Network (CNN) Model:
+```
 
-Trained on plant leaf images 🌱
-Multiple convolutional layers for feature extraction 🧠
-Fully connected layers for classification 🎯
-Prediction Classes:
-✅ Healthy
-❌ Diseased (E.g., Late Blight, Rust, etc.)
+For **Flask Users**:
+```bash
+python app.py
+```
 
-🖼️ Screenshots
-(Add screenshots of your web app interface and model predictions here!)
+The web app will run at **http://127.0.0.1:8000/** (Django) or **http://127.0.0.1:5000/** (Flask).
 
-📌 Future Enhancements
-✅ Increase dataset size for better accuracy
-✅ Support multiple plant species
-✅ Deploy on cloud platforms (AWS, Heroku, etc.)
-✅ Mobile App Integration
+---
 
-🤝 Contributions
-👨‍💻 Contributions are welcome! If you’d like to improve the model or UI, feel free to:
+## 🖼 Example Usage
+Upload a leaf image, and the model will predict the disease.
 
-Fork this repository
-Create a new branch (feature-new)
-Submit a pull request 🚀
-⭐ Support & Credits
-🌟 If you like this project, give it a star! ⭐
-🙏 Thanks to deep learning & open-source datasets for making this project possible!
+![Demo GIF](https://miro.medium.com/v2/resize:fit:1400/1*J4Rozh6VvidWxmof8FItaA.gif)
+
+---
+
+## 📌 Model Details
+- **Architecture**: Convolutional Neural Network (CNN)
+- **Framework**: PyTorch
+- **Dataset**: PlantVillage Dataset
+- **Accuracy**: ~97%
+
+---
+
+## 🤖 Technologies Used
+- **Python**
+- **Django / Flask**
+- **PyTorch**
+- **HTML, CSS, JavaScript**
+- **Bootstrap**
+
+---
+
+## 🛠️ Troubleshooting
+🔹 **Error: 'collections.OrderedDict' object has no attribute 'eval'**
+   - Ensure that you are loading the model correctly:
+   ```python
+   model = CNN_Model()  # Initialize the model class
+   model.load_state_dict(torch.load('plant_disease_model_1_latest.pth'))
+   model.eval()
+   ```
+
+🔹 **ModuleNotFoundError: No module named 'keras.engine'**
+   - If using a `.h5` Keras model, install dependencies:
+   ```bash
+   pip install keras tensorflow
+   ```
+
+---
+
+## 👨‍💻 Author
+🔹 **Your Name**  
+🔹 [GitHub](https://github.com/parash-ax)  
+🔹 [LinkedIn](https://linkedin.com/in/parash1310-a-)
+
+---
+
+## 📜 License
+This project is licensed under the **MIT License**.
+
+---
+
+⭐ **If you like this project, don't forget to star the repo!** ⭐
