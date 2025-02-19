@@ -63,7 +63,7 @@ The web app will run at **http://127.0.0.1:8000/** (Django) or **http://127.0.0.
 ## 🖼 Example Usage
 Upload a leaf image, and the model will predict the disease.
 
-![Demo GIF](https://miro.medium.com/v2/resize:fit:1400/1*J4Rozh6VvidWxmof8FItaA.gif)
+![Demo GIF](https://https://miro.medium.com/v2/resize:fit:1400/1*J4Rozh6VvidWxmof8FItaA.gif)
 
 ---
 
