@@ -60,9 +60,6 @@ The web app will run at **http://127.0.0.1:8000/** (Django) or **http://127.0.0.
 
 ---
 
-## 🖼 Example Usage
-Upload a leaf image, and the model will predict the disease.
-
 ![Demo GIF](https://cainvas-static.s3.amazonaws.com/media/user_data/cainvas-admin/grape-_leaf.gif)
 
 
